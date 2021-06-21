@@ -107,9 +107,9 @@ p {
     align-items: center;
 }
 
-.block .descr-title h {
+/* .block .descr-title h4 {
     flex-grow: 1;
-}
+} */
 
 .date-period {
     text-align: right;
@@ -178,7 +178,7 @@ em {
         width: 100%;
     }
 
-    .descr-title p {
+    .date-period {
         font-size: 1.3rem;
     }
 
@@ -200,70 +200,57 @@ em {
     }
 }
 
-/*
 @media screen and (max-width: 767px) {
     h1 {
-        font-size: 3.5rem;
-    }
-    h2 {
         font-size: 3rem;
     }
-    h3 {
-        font-size: 4rem;
-    }
-    h4 {
+    h2 {
         font-size: 2rem;
     }
-    .header h1 {
-        text-align: center;
-        padding: 0px;
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.2rem;
+    }
+    p {
+        font-size: 1rem;
     }
 
-    nav ul {
+    body {
+        padding: 10px;
+    }
+
+    
+    .header .contact-info {
         flex-direction: column;
-        align-items: center;
-    }
-
-    .main-nav ul {
-        padding-right: 0px;
-    }
-
-    .nav-link a, .main-nav a {
-        border-style: none;
-        text-decoration: underline;
-    }
-
-    .hero-img h2{
-        width: 100%;
-        margin: 0px;
-        text-align: center;
-    }
-
-    .content {
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .block-title {
         justify-content: center;
     }
 
-    .project {
-        width: 100%;
+    .block .descr-title {
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .project-title {
-        width: 100%;
+    .date-period {
+        min-width: 10px;
+        font-size: 1rem;
     }
 
-    .project-title h4, .project-title p {
-        display: inline-block;
+    .block .descr-box {
+        margin-top: 10px;
     }
+
+    em {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+
 
 }
 
-
-
- */
 
 

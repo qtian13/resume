@@ -1,0 +1,343 @@
+:root {
+    --outer-space: white;
+    --dark-grey: rgba(5, 6, 19, 0.8);
+    --dark-green: rgba(74, 96, 104, 0.9);
+    --opacity-low: .4;
+    --opacity-high: .6;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.75rem;
+    line-height: 1.5;
+    color: var(--dark-grey);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 0.625rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1 {
+    font-size: 3rem;
+  }
+  
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+      font-size: 2.5rem;
+  }
+  
+  h4 {
+    font-size: 2rem;
+  }
+  
+  p {
+    margin-bottom: 1.5rem;
+  }
+  
+
+.header {
+    padding: 10px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header h1 {
+    padding: 0 10px 0 70px;
+    color: var(--dark-grey);
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.main-nav ul {
+    padding-right: 70px;
+}
+
+.header a {
+    color: var(--light-tuiquoise);
+    border-bottom: 3px solid var(--light-tuiquoise);
+}
+
+.header a {
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+.hero-img {
+    background-image: url("../images/portfolio-background.jpg");
+    height: 150px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.hero-img h2 {
+    margin: auto 70px 20px auto;
+    padding: 0px 7px;
+    background-color: var(--light-tuiquoise);
+} 
+
+.content {
+    color: var(--dark-green);
+    padding: 0 70px;
+}
+
+/* About Me Starts */
+section {
+    display: flex;
+}
+
+.block {
+    margin: 40px 0;
+}
+
+.title-box {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.block-title{
+    display: flex;
+    justify-content: flex-end;
+    width: 1%;
+    margin-right: 20px;
+    padding: 0 15px;
+    text-align: right;
+    border-right: 3px solid var(--dark-green);
+}
+
+.block-descr {
+    width: 80%;
+    font-size: 1.3rem;
+    padding: 0 10px;
+}
+
+.block-descr p {
+    line-height: 2.4rem;
+}
+/* About Me End */
+
+/* Work Description Starts */
+.project-display {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    height: 170px;
+    width: 50%;
+    padding: 10px;
+}
+
+#project1 {
+    height: 400px;
+    width: 100%;
+}
+
+.project a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 5px solid var(--light-tuiquoise);
+}
+
+#project1 .display-background{
+    background-image: url("../images/cheatsheet.jpg");
+}
+
+#project2 .display-background{
+    background-image: url("../images/portfolio.png");
+    background-size: 120% 100%;
+}
+
+#project3 .display-background{
+    background-image: url("../images/Code-Refactoring.jpg");
+    background-size: 100% 150%;
+}
+
+#project4 .display-background{
+    background-image: url("../images/pastelpuzzles.jpg");
+    background-size: 100% 200%;
+}
+
+#project5 .display-background{
+    background-image: url("../images/runbuddy.jpg");
+    background-size: 100% 200%;
+}
+
+.display-background {
+    height: 100%;
+    /* background-size: cover; */
+    background-position: center;
+    background-color: rgba(204, 204, 204, 1);
+    opacity: var(--opacity-low);
+    transition: opacity 0.8s;
+}
+
+.display-background:hover {
+    opacity: var(--opacity-hight);
+}
+
+.project a .project-title {
+    position: absolute;
+    bottom: 20px;
+    color: var(--dark-green);
+    background-color: var(--light-tuiquoise);
+} 
+
+.project-title h4 {
+    margin: 6px 6px 3px 6px;
+}
+
+.project-title p {
+    margin: 0px 6px 6px 6px;
+}
+
+/* last block */
+.nav-contact {
+    margin: auto 0; 
+    width: 80%;   
+}
+
+.nav-contact ul {
+    justify-content: space-around;
+}
+.nav-link a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+.nav-link a {
+    color: var(--dark-green);
+    border-bottom: 3px solid var(--dark-green);
+}
+
+@media screen and (max-width: 991px) {
+    .header h1, .main-nav, .title-box, .block-descr  {
+        width: 100%;
+    }
+    header, section {
+        flex-direction: column;
+    }
+    
+    header ul {
+        justify-content: flex-end;
+    }
+
+    .block {
+        margin: 10px 0;
+    }
+
+    .content {
+        padding: 20px 40px;
+    }
+
+    .block-title {
+        justify-content: flex-start;
+        width: 100%;
+        border-right-style: none;
+        border-bottom: 3px solid var(--dark-green);
+        margin: auto;
+    }
+
+    .block-descr {
+        margin-top: 20px;
+    }
+    .project a .project-title {
+        bottom: -4px;
+    }
+
+    .nav-link ul {
+        padding: auto;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 4rem;
+    }
+    h4 {
+        font-size: 2rem;
+    }
+    .header h1 {
+        text-align: center;
+        padding: 0px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul {
+        padding-right: 0px;
+    }
+
+    .nav-link a, .main-nav a {
+        border-style: none;
+        text-decoration: underline;
+    }
+
+    .hero-img h2{
+        width: 100%;
+        margin: 0px;
+        text-align: center;
+    }
+
+    .content {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .block-title {
+        justify-content: center;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    .project-title {
+        width: 100%;
+    }
+
+    .project-title h4, .project-title p {
+        display: inline-block;
+    }
+
+}
+
+
+
+
+
+

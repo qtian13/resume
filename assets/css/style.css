@@ -15,8 +15,9 @@ body {
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--dark-grey);
-    padding-left: 15%;
-    padding-right: 15%;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 20px 100px;
 }
 
 h1,
@@ -101,17 +102,19 @@ p {
     align-items: flex-end;
 }
 
-.block .descr-title p {
-    width: 35%;
+.block .descr-title h {
+    flex-grow: 1;
+}
+
+.date-period {
+    text-align: right;
+    min-width: 150px;
     margin-bottom: 0.625rem;
 }
 
-.block .descr-title h4 {
-    width: 65%;
-}
 
 .descr-content {
-    width: 65%;
+    width: 480px;
 }
 
 
@@ -135,7 +138,7 @@ em {
 }
 
 /* Experience Starts */
-
+/* 
 @media screen and (max-width: 991px) {
     .header h1, .main-nav, .title-box, .descr-box  {
         width: 100%;
@@ -240,6 +243,6 @@ em {
 
 
 
-
+ */
 
 

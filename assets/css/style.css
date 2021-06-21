@@ -15,6 +15,8 @@ body {
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--dark-grey);
+    padding-left: 60px;
+    padding-right: 60px;
 }
 
 h1,
@@ -30,78 +32,42 @@ h6 {
 
 h1 {
     font-size: 3rem;
-  }
+}
   
-  h2 {
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
     font-size: 2.5rem;
-  }
-
-  h3 {
-      font-size: 2.5rem;
-  }
-  
-  h4 {
-    font-size: 2rem;
-  }
-  
-  p {
-    margin-bottom: 1.5rem;
-  }
-  
-
-.header {
-    padding: 10px 0px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.header h1 {
-    padding: 0 10px 0 70px;
+h4 {
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 1.5rem;
+}
+
+.header .contact-info {
+    display: flex;
+}
+.contact-info p {
+    margin-right: 15px;
+}
+
+.header a {
     color: var(--dark-grey);
+    /* text-decoration: none; */
+
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-.main-nav ul {
-    padding-right: 70px;
-}
-
-.header a {
-    color: var(--light-tuiquoise);
-    border-bottom: 3px solid var(--light-tuiquoise);
-}
-
-.header a {
-    font-size: 2rem;
-    text-decoration: none;
-    padding: 5px 10px;
-    margin: 5px;
-}
-
-.hero-img {
-    background-image: url("../images/portfolio-background.jpg");
-    height: 150px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-.hero-img h2 {
-    margin: auto 70px 20px auto;
-    padding: 0px 7px;
-    background-color: var(--light-tuiquoise);
-} 
 
 .content {
     color: var(--dark-green);
-    padding: 0 70px;
 }
 
-/* About Me Starts */
 section {
     display: flex;
 }
@@ -111,7 +77,7 @@ section {
 }
 
 .title-box {
-    width: 20%;
+    width: 15%;
     display: flex;
     justify-content: flex-end;
 }
@@ -121,121 +87,20 @@ section {
     justify-content: flex-end;
     width: 1%;
     margin-right: 20px;
-    padding: 0 15px;
+    padding: 0 10px;
     text-align: right;
     border-right: 3px solid var(--dark-green);
 }
 
-.block-descr {
-    width: 80%;
-    font-size: 1.3rem;
-    padding: 0 10px;
+.descr-box {
+    width: 85%;
+    font-size: 1.2rem;
 }
 
-.block-descr p {
-    line-height: 2.4rem;
-}
-/* About Me End */
-
-/* Work Description Starts */
-.project-display {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.project {
-    height: 170px;
-    width: 50%;
-    padding: 10px;
-}
-
-#project1 {
-    height: 400px;
-    width: 100%;
-}
-
-.project a {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 100%;
-    border: 5px solid var(--light-tuiquoise);
-}
-
-#project1 .display-background{
-    background-image: url("../images/cheatsheet.jpg");
-}
-
-#project2 .display-background{
-    background-image: url("../images/portfolio.png");
-    background-size: 120% 100%;
-}
-
-#project3 .display-background{
-    background-image: url("../images/Code-Refactoring.jpg");
-    background-size: 100% 150%;
-}
-
-#project4 .display-background{
-    background-image: url("../images/pastelpuzzles.jpg");
-    background-size: 100% 200%;
-}
-
-#project5 .display-background{
-    background-image: url("../images/runbuddy.jpg");
-    background-size: 100% 200%;
-}
-
-.display-background {
-    height: 100%;
-    /* background-size: cover; */
-    background-position: center;
-    background-color: rgba(204, 204, 204, 1);
-    opacity: var(--opacity-low);
-    transition: opacity 0.8s;
-}
-
-.display-background:hover {
-    opacity: var(--opacity-hight);
-}
-
-.project a .project-title {
-    position: absolute;
-    bottom: 20px;
-    color: var(--dark-green);
-    background-color: var(--light-tuiquoise);
-} 
-
-.project-title h4 {
-    margin: 6px 6px 3px 6px;
-}
-
-.project-title p {
-    margin: 0px 6px 6px 6px;
-}
-
-/* last block */
-.nav-contact {
-    margin: auto 0; 
-    width: 80%;   
-}
-
-.nav-contact ul {
-    justify-content: space-around;
-}
-.nav-link a {
-    font-size: 1.8rem;
-    text-decoration: none;
-    padding: 5px 5px;
-}
-
-.nav-link a {
-    color: var(--dark-green);
-    border-bottom: 3px solid var(--dark-green);
-}
+/* Experience Starts */
 
 @media screen and (max-width: 991px) {
-    .header h1, .main-nav, .title-box, .block-descr  {
+    .header h1, .main-nav, .title-box, .descr-box  {
         width: 100%;
     }
     header, section {
@@ -262,7 +127,7 @@ section {
         margin: auto;
     }
 
-    .block-descr {
+    .descr-box {
         margin-top: 20px;
     }
     .project a .project-title {

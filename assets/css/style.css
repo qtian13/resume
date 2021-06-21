@@ -15,8 +15,8 @@ body {
     font-size: 1.75rem;
     line-height: 1.5;
     color: var(--dark-grey);
-    padding-left: 60px;
-    padding-right: 60px;
+    padding-left: 15%;
+    padding-right: 15%;
 }
 
 h1,
@@ -43,11 +43,11 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 p {
-  margin-bottom: 1.5rem;
+    font-size: 1.5rem;
 }
 
 .header .contact-info {
@@ -68,21 +68,19 @@ p {
     color: var(--dark-green);
 }
 
-section {
-    display: flex;
-}
-
 .block {
+    display: flex;
     margin: 40px 0;
 }
 
-.title-box {
+.block .title-box {
     width: 15%;
+    min-width: 170px;
     display: flex;
     justify-content: flex-end;
 }
 
-.block-title{
+.block .title-box .block-title{
     display: flex;
     justify-content: flex-end;
     width: 1%;
@@ -92,9 +90,48 @@ section {
     border-right: 3px solid var(--dark-green);
 }
 
-.descr-box {
+.block .descr-box {
     width: 85%;
     font-size: 1.2rem;
+}
+
+.block .descr-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.block .descr-title p {
+    width: 35%;
+    margin-bottom: 0.625rem;
+}
+
+.block .descr-title h4 {
+    width: 65%;
+}
+
+.descr-content {
+    width: 65%;
+}
+
+
+.block .descr-box .descr-content-list {
+    list-style-type: disc;
+    list-style-position: outside;
+    padding: 0px 0px 20px 15px;
+}
+
+.descr-content-list li {
+    text-align: justify;
+}
+
+.vertically-center {
+    display: flex;
+    align-items: center;
+}
+
+em {
+    font-size: 1.4rem;
 }
 
 /* Experience Starts */

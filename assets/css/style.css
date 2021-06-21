@@ -96,10 +96,15 @@ p {
     font-size: 1.2rem;
 }
 
+.block-content {
+    /* padding-top: 10px; */
+    padding-bottom: 10px;
+}
+
 .block .descr-title {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .block .descr-title h {
@@ -121,7 +126,7 @@ p {
 .block .descr-box .descr-content-list {
     list-style-type: disc;
     list-style-position: outside;
-    padding: 0px 0px 20px 15px;
+    padding-left: 15px;
 }
 
 .descr-content-list li {
@@ -130,6 +135,7 @@ p {
 
 .vertically-center {
     display: flex;
+    height: 100%;
     align-items: center;
 }
 
@@ -137,49 +143,64 @@ em {
     font-size: 1.4rem;
 }
 
-/* Experience Starts */
-/* 
+
 @media screen and (max-width: 991px) {
-    .header h1, .main-nav, .title-box, .descr-box  {
-        width: 100%;
+    body {
+        padding-left: 50px;
+        padding-right: 50px;;
     }
-    header, section {
-        flex-direction: column;
+
+    .header {
+        text-align: center;
+    }
+
+    .header .contact-info {
+        justify-content: center;
     }
     
-    header ul {
-        justify-content: flex-end;
+
+    .content {
+        padding: 10px 20px;
     }
 
     .block {
         margin: 10px 0;
+        flex-direction: column;
+        align-items: flex-start;
     }
 
-    .content {
-        padding: 20px 40px;
-    }
-
-    .block-title {
-        justify-content: flex-start;
+    .block .title-box {
         width: 100%;
+    }
+
+    .block .descr-box {
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .descr-title p {
+        font-size: 1.3rem;
+    }
+
+    .block .title-box .block-title {
+        padding: 0;
+        width: 100%;
+        justify-content: flex-start;
         border-right-style: none;
         border-bottom: 3px solid var(--dark-green);
         margin: auto;
     }
 
-    .descr-box {
-        margin-top: 20px;
-    }
-    .project a .project-title {
-        bottom: -4px;
+    .descr-content {
+        width: 100%;
     }
 
-    .nav-link ul {
-        padding: auto;
+    em {
+        margin-bottom: 30px;
     }
 }
 
-
+/*
 @media screen and (max-width: 767px) {
     h1 {
         font-size: 3.5rem;

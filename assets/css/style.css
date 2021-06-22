@@ -22,10 +22,7 @@ body {
 
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   margin-bottom: 0.625rem;
   font-weight: 700;
   line-height: 1.1;
@@ -36,7 +33,7 @@ h1 {
 }
   
 h2 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 h3 {
@@ -44,27 +41,38 @@ h3 {
 }
 
 h4 {
-  font-size: 1.5rem;
-}
-
-p {
     font-size: 1.5rem;
 }
 
-.header .contact-info {
+h1 {
+    display: inline-block;
+}
+
+/* Header Starts */
+header .title {
+    position: relative;
+}
+header button {
+    position: absolute;
+    right: 0px;
+    padding: 3px 10px;
+}
+
+header .contact-info {
     display: flex;
 }
+
 .contact-info p {
     margin-right: 15px;
 }
 
-.header a {
+header a {
+    font-size: 1.6rem;
     color: var(--dark-grey);
-    /* text-decoration: none; */
-
 }
+/* Header Ends */
 
-
+/* Content Starts */
 .content {
     color: var(--dark-green);
 }
@@ -91,40 +99,34 @@ p {
     border-right: 3px solid var(--dark-green);
 }
 
-.block .descr-box {
+.descr-box {
     width: 85%;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .block-content {
-    /* padding-top: 10px; */
     padding-bottom: 10px;
 }
 
 .block .descr-title {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
 }
-
-/* .block .descr-title h4 {
-    flex-grow: 1;
-} */
 
 .date-period {
+    font-size: 1.4rem;
+    font-weight: 500;
     text-align: right;
     min-width: 150px;
-    margin-bottom: 0.625rem;
 }
-
 
 .descr-content {
     width: 480px;
 }
 
-
-.block .descr-box .descr-content-list {
-    list-style-type: disc;
+.project-details {
+    list-style: disc;
     list-style-position: outside;
     padding-left: 15px;
 }
@@ -150,23 +152,21 @@ em {
         padding-right: 50px;;
     }
 
-    .header {
+    header {
         text-align: center;
     }
 
-    .header .contact-info {
+    header .contact-info {
         justify-content: center;
     }
     
-
     .content {
-        padding: 10px 20px;
+        padding: 10px 0px;
     }
 
     .block {
         margin: 10px 0;
         flex-direction: column;
-        align-items: flex-start;
     }
 
     .block .title-box {
@@ -174,7 +174,7 @@ em {
     }
 
     .block .descr-box {
-        margin-top: 20px;
+        margin-top: 5px;
         width: 100%;
     }
 
@@ -196,17 +196,16 @@ em {
     }
 
     em {
-        margin-bottom: 30px;
+        margin-bottom: 10px;
     }
-
 }
 
 @media screen and (max-width: 767px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     h2 {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     h3 {
         font-size: 1.5rem;
@@ -214,21 +213,17 @@ em {
     h4 {
         font-size: 1.2rem;
     }
-    p {
-        font-size: 1rem;
-    }
 
     body {
-        padding: 10px;
+        padding: 15px;
     }
 
-    
-    .header .contact-info {
+    header .contact-info {
         flex-direction: column;
     }
 
-    .block-title {
-        justify-content: center;
+    header a {
+        font-size: 1.1rem;
     }
 
     .block .descr-title {
@@ -238,15 +233,21 @@ em {
 
     .date-period {
         min-width: 10px;
-        font-size: 1rem;
+        font-size: 1.1rem;
+        line-height: 1.0;
     }
 
     .block .descr-box {
-        margin-top: 10px;
+        margin-top: 5px;
+        font-size: 1rem;
+    }
+
+    .block .descr-box .block-content {
+        padding-bottom: 5px;
     }
 
     em {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
         margin-bottom: 10px;
     }
 

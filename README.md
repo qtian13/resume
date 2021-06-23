@@ -15,7 +15,8 @@ git clone https://github.com/qtian13/resume.git
 1. The resume homepage consists of 2 parts:  the main header and the content of experience.
 1. The header contains the employee name, the job position looking for and contact infomation.  
 1. The experience includes projects, work experience, skills and education.
-1. This resume is screen responsive
+2. A button linked to pdf version of resume is positioned top right for save or print.
+3. This resume is screen responsive
 
 ## Page URL
 https://qtian13.github.io/resume/

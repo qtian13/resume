@@ -159,6 +159,10 @@ em {
     header .contact-info {
         justify-content: center;
     }
+
+    .contact-info p:last-of-type {
+        margin-right: 0px;
+    }
     
     .content {
         padding: 10px 0px;
@@ -220,6 +224,10 @@ em {
 
     header .contact-info {
         flex-direction: column;
+    }
+
+    .contact-info p {
+        margin-right: 0px;
     }
 
     header a {

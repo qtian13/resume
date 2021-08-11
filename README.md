@@ -22,10 +22,6 @@ git clone https://github.com/qtian13/resume.git
 https://qtian13.github.io/resume/
 
 ## Page Screen Shot with Different Screen Width
-![large screen](assets/images/desktop_screen.png)
-![medium screen](assets/images/tablet_screen.png)
-![small screen](assets/images/mobile_screen.png)
-
 
 ## Author
 Qiushuang Tian

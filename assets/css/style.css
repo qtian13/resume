@@ -57,13 +57,19 @@ header button {
     right: 0px;
     padding: 3px 10px;
 } */
+
+a {
+    text-decoration: none;
+}
+
 header {
     display: flex;
+    position: relative;
     justify-content: space-between;
 }
 
 header .title {
-    min-width: 300px;
+    min-width: 150px;
 }
 
 .contact-info p {
@@ -74,6 +80,12 @@ header .title {
 header a {
     font-size: 1.6rem;
     color: var(--dark-grey);
+}
+
+#pdf-button {
+    position: absolute;
+    right: 0px;
+    top: -20px;
 }
 /* Header Ends */
 
@@ -101,7 +113,7 @@ header a {
 .block .descr-title {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
 }
 
 .date-period {
@@ -138,9 +150,9 @@ em {
         padding-right: 50px;;
     }
 
-    header {
+    /* header {
         text-align: center;
-    }
+    } */
 
     header .contact-info {
         justify-content: center;
@@ -208,21 +220,12 @@ em {
         padding: 15px;
     }
 
-    header .contact-info {
-        flex-direction: column;
-    }
-
     .contact-info p {
         margin-right: 0px;
     }
 
     header a {
         font-size: 1.1rem;
-    }
-
-    .block .descr-title {
-        flex-direction: column;
-        align-items: flex-start;
     }
 
     .date-period {

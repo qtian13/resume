@@ -49,21 +49,26 @@ h1 {
 }
 
 /* Header Starts */
-header .title {
+/* header .title {
     position: relative;
 }
 header button {
     position: absolute;
     right: 0px;
     padding: 3px 10px;
+} */
+header {
+    display: flex;
+    justify-content: space-between;
 }
 
-header .contact-info {
-    display: flex;
+header .title {
+    min-width: 300px;
 }
 
 .contact-info p {
     margin-right: 15px;
+    text-align: end;
 }
 
 header a {

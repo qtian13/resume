@@ -133,10 +133,9 @@ header a {
     text-align: justify;
 }
 
-.vertically-center {
+.major-details {
     display: flex;
-    height: 100%;
-    align-items: center;
+    justify-content: space-between;
 }
 
 em {

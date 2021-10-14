@@ -1,7 +1,6 @@
 :root {
     --outer-space: white;
-    --dark-grey: rgba(5, 6, 19, 0.8);
-    --dark-green: rgba(74, 96, 104, 0.9);
+    --font-color: rgba(0, 0, 0, 0.7);
     --opacity-low: .4;
     --opacity-high: .6;
 }
@@ -13,11 +12,11 @@ html {
 body {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 1.75rem;
-    line-height: 1.5;
-    color: var(--dark-grey);
+    line-height: 1.45;
+    color: var(--font-color);
     margin: 0 auto;
     max-width: 1000px;
-    padding: 20px 100px;
+    padding: 45px 55px;
 }
 
 h1,
@@ -60,6 +59,7 @@ header button {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 header {
@@ -72,14 +72,13 @@ header .title {
     min-width: 150px;
 }
 
-.contact-info p {
+.personal-info p {
     margin-right: 15px;
     text-align: end;
 }
 
 header a {
-    font-size: 1.6rem;
-    color: var(--dark-grey);
+    font-size: 1.3rem;
 }
 
 #pdf-button {
@@ -91,7 +90,7 @@ header a {
 
 /* Content Starts */
 .content {
-    color: var(--dark-green);
+    color: var(--font-color);
 }
 /* 
 .block {
@@ -99,15 +98,23 @@ header a {
 } */
 
 .block .title-box .block-title{
-    border-bottom: 3px solid var(--dark-green);
+    border-bottom: 3px solid var(--font-color);
 }
 
 .descr-box {
     font-size: 1.3rem;
 }
 
+.project-link {
+    display: flex;
+}
+
+.project-link p {
+    margin-right: 30px;
+}
+
 .block-content {
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .block .descr-title {
@@ -153,11 +160,11 @@ em {
         text-align: center;
     } */
 
-    header .contact-info {
+    header .personal-info {
         justify-content: center;
     }
 
-    .contact-info p:last-of-type {
+    .personal-info p:last-of-type {
         margin-right: 0px;
     }
     
@@ -188,7 +195,7 @@ em {
         width: 100%;
         justify-content: flex-start;
         border-right-style: none;
-        border-bottom: 3px solid var(--dark-green);
+        border-bottom: 3px solid var(--font-color);
         margin: auto;
     }
 
@@ -219,7 +226,7 @@ em {
         padding: 15px;
     }
 
-    .contact-info p {
+    .personal-info p {
         margin-right: 0px;
     }
 
